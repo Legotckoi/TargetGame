@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>GameArea.qml</file>
+        <file>Target.qml</file>
+        <file>Target.png</file>
+        <file>logic.js</file>
+    </qresource>
+</RCC>
