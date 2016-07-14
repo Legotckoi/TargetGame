@@ -10,6 +10,8 @@ function getGameState() { return gameState; }
 var gameField;      // Игровое поле, игровая сетка
 // Создаём заготовку для мишеней
 var targetComponent = Qt.createComponent("Target.qml");
+// Создаём заготовку для мишеней
+var bulletComponent = Qt.createComponent("Bullet.qml");
 
 // Инициализируем новое состояние игры
 function newGameState(gameArea)
@@ -30,7 +32,13 @@ function getRandomRound(min, max)
 // Создаём мишень из компонента заготовки
 function createTarget(parent, row, column)
 {
-    var target = targetComponent.createObject(parent, {"row": row, "col": column})
+    targetComponent.createObject(parent, {"row": row, "col": column})
+}
+
+// Создаём след от пули
+function createBullet(parent, x, y)
+{
+    bulletComponent.createObject(parent, {"x": x, "y": y});
 }
 
 // Мишень удаляется из массива сетки

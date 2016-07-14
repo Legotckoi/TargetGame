@@ -3,7 +3,15 @@
         <file>main.qml</file>
         <file>GameArea.qml</file>
         <file>Target.qml</file>
-        <file>Target.png</file>
         <file>logic.js</file>
+        <file>graphics/bullet-1.png</file>
+        <file>graphics/bullet-2.png</file>
+        <file>graphics/bullet-3.png</file>
+        <file>graphics/bullet-4.png</file>
+        <file>graphics/bullet-5.png</file>
+        <file>graphics/bullet-6.png</file>
+        <file>graphics/Target.png</file>
+        <file>Bullet.qml</file>
+        <file>InfoBar.qml</file>
     </qresource>
 </RCC>
