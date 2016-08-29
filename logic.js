@@ -32,7 +32,8 @@ function getRandomRound(min, max)
 // Создаём мишень из компонента заготовки
 function createTarget(parent, row, column)
 {
-    targetComponent.createObject(parent, {"row": row, "col": column})
+    var target = targetComponent.createObject(parent, {"row": row, "col": column})
+    gameField[row][column] = target;
 }
 
 // Создаём след от пули
